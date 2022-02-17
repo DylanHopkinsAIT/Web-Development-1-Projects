@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<title>Stargazing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/custom.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="NotBlack w3-content TextColor" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse Dark left w3-animate-left borderShadow" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-display-container">
+      <img src="images/Icon/transparency.png" style="width:25%;" class="w3-round">
+      <div class="w3-display-middle w3-large">Dark Sky</div>      
+  </div>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding "><i class="fa fa-home w3-margin-right"></i>HOMEPAGE</a> 
+    <a href="where-to-go.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plane w3-margin-right"></i>WHERE TO GO?</a> 
+    <a href="time-of-year.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-calendar w3-margin-right"></i>WHAT TIME OF YEAR?</a>
+    <a href="what-to-see.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding Blurple"><i class="fa fa-camera	w3-margin-right"></i>WHAT TO SEE?</a>
+    <a href="what-to-bring.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-shopping-bag w3-margin-right"></i>WHAT TO BRING?</a>
+    <a href="report.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-quote-left w3-margin-right"></i>REPORT</a>
+
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1 class="w3-center w3-padding"><b>Constellations To Keep An Eye Out For</b></h1>
+    
+  </header>
+  
+  <!-- Constellation Cards -->
+ <section>
+
+  <!--First Row-->
+  <div class="w3-row w3-padding w3-animate-opacity">
+      <div class="w3-container w3-third w3-padding">					
+        <div class="w3-card-4 Dark">
+          <header class="w3-container w3-center Dark">
+            <h1>Aquarius</h1>
+          </header> 
+          <img src="images/Constellations/AquariusCC.jpg" alt="Wonder Woman" style="width:100%;">
+          <footer class="w3-container w3-center Dark">
+            <h4>Latin for “water carrier” or “cup carrier” <br> Best viewed in: October</h4>
+          </footer>
+        </div>
+      </div>
+      <div class="w3-container w3-third w3-padding">					
+        <div class="w3-card-4 Dark">
+          <header class="w3-container w3-center Dark">
+            <h1>Aries</h1>
+          </header> 
+          <img src="images/Constellations/AriesCC.jpg" alt="Wonder Woman" style="width:100%;">
+          <footer class="w3-container w3-center Dark">
+            <h4>Latin for “ram” <br> Best viewed in: December</h4>
+          </footer>
+        </div>
+      </div>
+      <div class="w3-container w3-third w3-padding">					
+        <div class="w3-card-4 Dark">
+          <header class="w3-container w3-center Dark">
+            <h1>Canis Major</h1>
+          </header> 
+          <img src="images/Constellations/CanisMajorCC.jpg" alt="Wonder Woman" style="width:100%;">
+          <footer class="w3-container w3-center Dark">
+            <h4>Latin for "Greater Dog" <br> Best Viewed in February</h4>
+          </footer>
+        </div>
+    </div>
+
+  <!--Second Row-->
+    <div class="w3-container w3-third w3-padding">					
+      <div class="w3-card-4 Dark">
+        <header class="w3-container w3-center Dark">
+          <h1>Cassiopeia</h1>
+        </header> 
+        <img src="images/Constellations/CassiopeiaCC.jpg" alt="Wonder Woman" style="width:100%">
+        <footer class="w3-container w3-center Dark">
+          <h4>A queen in Greek Mythology <br> Best Viewed in: November</h4>
+        </footer>
+      </div>
+    </div>
+    <div class="w3-container w3-third w3-padding">					
+      <div class="w3-card-4 Dark">
+        <header class="w3-container w3-center Dark">
+          <h1>Cygnus</h1>
+        </header> 
+        <img src="images/Constellations/CygnusCC.jpg" alt="Wonder Woman" style="width:100%;">
+        <footer class="w3-container w3-center Dark">
+          <h4>Latinized Greek for "Swan" <br>Best Viewed in: September</h4>
+        </footer>
+      </div>
+    </div>
+    <div class="w3-container w3-third w3-padding">					
+      <div class="w3-card-4 Dark">
+        <header class="w3-container w3-center Dark">
+          <h1>Leo</h1>
+        </header> 
+        <img src="images/Constellations/LeoCC.jpg" alt="Wonder Woman" style="width:100%;">
+        <footer class="w3-container w3-center Dark">
+          <h4>Latin for "Lion" <br> Best Viewed in: April</h4>
+        </footer>
+      </div>
+  </div>
+
+  <!--Third Row-->
+    <div class="w3-container w3-third w3-padding">					
+      <div class="w3-card-4 Dark">
+        <header class="w3-container w3-center Dark">
+          <h1>Orion</h1>
+        </header> 
+        <img src="images/Constellations/OrionCC.jpg" alt="Wonder Woman" style="width:100%;">
+        <footer class="w3-container w3-center Dark">
+          <h4>The mythical Greek Hunter Best <br> Viewed in: January</h4>
+        </footer>
+      </div>
+    </div>
+    <div class="w3-container w3-third w3-padding">					
+      <div class="w3-card-4 Dark">
+        <header class="w3-container w3-center Dark">
+          <h1>Pisces</h1>
+        </header> 
+        <img src="images/Constellations/PiscesCC.jpg" alt="Wonder Woman" style="width:100%;">
+        <footer class="w3-container w3-center Dark">
+          <h4>Latin for "Fish" <br> Best Viewed in: November</h4>
+        </footer>
+      </div>
+    </div>
+    <div class="w3-container w3-third w3-padding">					
+      <div class="w3-card-4 Dark">
+        <header class="w3-container w3-center Dark">
+          <h1>Ursa Major</h1>
+        </header> 
+        <img src="images/Constellations/UrsaMajorCC.jpg" alt="Wonder Woman" style="width:100%;">
+        <footer class="w3-container w3-center Dark">
+          <h4>Latin for "Larger Bear" <br> Best Viewed in: April</h4>
+        </footer>
+      </div>
+  </div>
+ </section>
+
+ 
+  
+ 
+</div>
+<!-- End page content -->
+
+<!--Custom Scrollbar-->
+  <style>
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track { 
+      border-radius: 10px;
+      background: Dark; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #7289DA; 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #7289DA; 
+    }
+  </style>
+
+<script>
+
+// Script to open and close sidebar
+  function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+
+</body>
+</html>

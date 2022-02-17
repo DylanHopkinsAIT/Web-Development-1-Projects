@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<title>Stargazing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/custom.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="NotBlack w3-content TextColor" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse Dark left w3-animate-left borderShadow" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-display-container w3-padding">
+      <img src="images/Icon/transparency.png" style="width:25%;" class="w3-round">
+      <div class="w3-display-middle w3-large">Dark Sky</div>      
+  </div>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding "><i class="fa fa-home w3-margin-right"></i>HOMEPAGE</a> 
+    <a href="where-to-go.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding Blurple"><i class="fa fa-plane w3-margin-right"></i>WHERE TO GO?</a> 
+    <a href="time-of-year.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-calendar w3-margin-right"></i>WHAT TIME OF YEAR?</a>
+    <a href="what-to-see.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-camera	w3-margin-right"></i>WHAT TO SEE?</a>
+    <a href="what-to-bring.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-shopping-bag w3-margin-right"></i>WHAT TO BRING?</a>
+    <a href="report.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-quote-left w3-margin-right"></i>REPORT</a>
+
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1 class="w3-center w3-padding"><b>Best Destinations to Visit</b></h1>
+    
+    </div>
+  </header>
+  
+  <!-- Map -->
+  <div class="w3-row-padding w3-animate-opacity ">
+    <div class="container w3-container w3-margin-bottom">
+      <iframe class=" w3-padding responsive-iframe" src="https://www.google.com/maps/d/u/0/embed?mid=18oD8fik7xJwnaiDk_OO-XxgJZxHg1WXQ" width="1250" height="720" frameborder="0" style="border:0;" allowfullscreen="1" aria-hidden="false" tabindex="0"></iframe>
+    </div> 
+   
+   <!-- Text -->
+<section>
+  
+  <!--First Row-->
+  <div class="w3-row w3-animate-opacity">
+    <div class="w3-container w3-half w3-padding">					
+      <div class="w3-card-4 Dark">
+        <header class="w3-container w3-center Dark">
+          <h1>Hella, Iceland</h1>
+        </header> 
+        <footer class="w3-container w3-center Dark">
+          <h4>Iceland’s brisk Nordic air makes for skies that are so clear, you’ll see millions of stars overhead. Hella is not only home to great skies for stargazing, but also to the otherworldly Northern Lights as well. Located further south than other similar Northern Lights viewpoints, you’ll be able to stay outdoors longer, which is good news – with double the sights, you’ll want to make sure you don’t miss anything.</h4>
+        </footer>
+      </div>
+    </div>
+    
+    <div class="w3-container w3-half w3-padding">					
+      <div class="w3-card-4 Dark">
+        <header class="w3-container w3-center Dark">
+          <h1>La Palma, Canary Islands</h1>
+        </header> 
+        <footer class="w3-container w3-center Dark">
+          <h4>La Palma in the Canary Islands is well-known as one of the best spots for stargazing due to its exceptionally clear skies. Its unique position in the Atlantic Ocean gives it a natural cloud screen that reflects sunlight away from the sky above. It’s also close to the equator, which allows stargazers to see stars from both the northern and southern hemispheres.<br> <br></h4>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!--Second Row-->
+  <div class="w3-row w3-animate-opacity">
+      <div class="w3-container w3-half w3-padding">					
+        <div class="w3-card-4 Dark">
+          <header class="w3-container w3-center Dark">
+            <h1>Kerry, Ireland</h1>
+          </header> 
+          <footer class="w3-container w3-center Dark">
+            <h4>Kerry International Dark Sky Reserve sits on the Iveragh Peninsula, home to nearly 4,000 residents, and incorporates approximately 700 square km of territory along the Wild Atlantic Way tourism trail. Its location between the Kerry Mountains and the Atlantic Ocean provides some natural protection against light pollution. <br> <br></h4>
+          </footer>
+        </div>
+    </div>
+
+    <div class="w3-container w3-half w3-padding">					
+      <div class="w3-card-4 Dark">
+        <header class="w3-container w3-center Dark">
+          <h1>Beskydy Dark-Sky Park, Czech Republic, Slovakia & Poland</h1>
+        </header> 
+        <footer class="w3-container w3-center Dark">
+          <h4>The region of eastern Czech Republic that borders Slovakia, the Beskydy Protected Landscape Area, is mostly mountains covered in indigenous primeval forests. It’s possible to take part in various stargazing activities in the mountainous setting of Gruň, including a ‘relaxation under the stars’ sky tour.</h4>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!--Third Row-->
+  <div class="w3-row w3-animate-opacity">
+        <div class="w3-container w3-half w3-padding">					
+          <div class="w3-card-4 Dark">
+            <header class="w3-container w3-center Dark">
+              <h1>Haunte-Pyrénées, France</h1>
+            </header> 
+          <footer class="w3-container w3-center Dark">
+            <h4>Haute-Pyrénées is a region in the south of France just off the Pyrénées Mountains that separate France from Spain. There, you’ll find the Pyrénées National Park, which is the biggest International Dark Sky Reserve in Europe and home to the Pic du Midi Observatory. <br> <br></h4>
+          </footer>
+        </div>
+      </div>
+
+      <div class="w3-container w3-half w3-padding">					
+        <div class="w3-card-4 Dark">
+          <header class="w3-container w3-center Dark">
+            <h1>Westhavelland, Germany</h1>
+          </header> 
+          <footer class="w3-container w3-center Dark">
+            <h4>Westhavelland is a nature park that is recognized as a Dark Sky Reserve by the International Dark-Sky Association. Its certified dark skies are protected from light pollution from major population centers that are nearby, and its proximity to Berlin makes this designation extra special. This also makes Westhavelland one of the more accessible Dark Sky Reserves.</h4>
+          </footer>
+        </div>
+    </div>
+  </div>
+
+<!--Fourth Row-->
+   <div class="w3-row w3-animate-opacity">
+      <div class="w3-container w3-half w3-padding">					
+        <div class="w3-card-4 Dark">
+          <header class="w3-container w3-center Dark">
+            <h1>Tuscany, Italy</h1>
+          </header> 
+          <footer class="w3-container w3-center Dark">
+            <h4>There’s no better place to take up astronomy than where Galileo developed his telescope, and Tuscany’s dry weather and distance from urban centers makes for perfect stargazing conditions. Here, you can see the moon’s craters, sunspots, and Jupiter’s moons.</h4>
+          </footer>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-half w3-padding">					
+        <div class="w3-card-4 Dark">
+          <header class="w3-container w3-center Dark">
+            <h1>Hortobágy National Park, Hungary</h1>
+          </header> 
+          <footer class="w3-container w3-center Dark">
+            <h4>Hortobágy National Park is a UNESCO World Heritage site, the first Hungarian National Park, and an IDA-recognized Dark Sky Park. It’s one of the biggest continuous grasslands, and its different terrain and water sources make it a great home to more than 340 different species of bird</h4>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+ 
+
+<!-- End page content -->
+
+  <!--Custom Scrollbar-->
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track { 
+        border-radius: 10px;
+        background: Dark; 
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #7289DA; 
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #7289DA; 
+      }
+    </style>
+
+
+
+
+<!-- Script to open and close sidebar -->
+  <script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

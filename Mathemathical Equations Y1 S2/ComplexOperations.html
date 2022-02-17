@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Equations</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif
+    }
+  </style>
+  <!--'Font Awesome' Icons-->
+  <script src="https://kit.fontawesome.com/ed7cc4e727.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/ComplexOperations.js"></script>
+</head>
+
+<body class="NotBlack w3-content TextColor" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse Dark left w3-animate-left borderShadow" style="z-index:3;width:300px;"
+    id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+        title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="w3-display-container">
+        <div class="w3-display-middle w3-large w3-padding-16">Calculators</div>
+      </div>
+    </div>
+    <div class="w3-bar-block w3-padding-16">
+      <a href="BasicOperations.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fas fa-plus fa-fw w3-margin-right"></i>Basic Operations</a>
+      <a href="ComplexOperations.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fas fa-square-root-alt fa-fw w3-margin-right"></i>Complex Operations</a>
+      <a href="Tables.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fas fa-times w3-margin-right fa-fw"></i>Tables</a>
+      <a href="UnitConversions.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fas fa-equals fa-fw	w3-margin-right"></i>Unit Conversions</a>
+      <a href="Quizzes.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fas fa-percentage fa-fw w3-margin-right"></i>Quizzes</a>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="Header">
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+          class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h1 class="w3-center w3-padding"><b>Complex Operations</b></h1>
+
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <section>
+
+      <div class="w3-card Dark">
+        <!--Factorial Calculator-->
+        <header class="w3-center">
+          <h2>Factorial Calculator</h2>
+        </header>
+
+        <div class="w3-padding w3-row-padding">
+          <div class="w3-half">
+            <label> <b>Enter an integer value between 1 & 20: </b></label>
+            <input class="w3-input w3-border" type="text" placeholder="Value A" id="inputA">
+          </div>
+
+          <div class="w3-half">
+            <label> <b>Answer: </b></label>
+            <input class="w3-input w3-border" type="text" placeholder="Answer" readonly id="outputA">
+          </div>
+
+        </div>
+        <div class=" w3-row-padding w3-bar">
+          <div class="w3-center w3-padding"> <input type="button" class="w3-button w3-white" value="Calculate"
+              id="calculate"> </div>
+        </div>
+
+
+        <hr>
+
+
+        <!--MinMax-->
+        <header class="w3-center">
+          <h2>Min/Max of a Sequence</h2>
+        </header>
+
+        <div class="w3-padding w3-row-padding">
+          <div">
+            <label> <b>Enter a sequence of numbers separated by spaces: </b></label>
+            <input id="inputB" class="w3-input w3-border" type="text" placeholder="Insert sequence here">
+        </div>
+
+
+        <div id="minmax" class="w3-center w3-padding"> <input type="button" class="w3-button w3-white"
+            value="Calculate"> </div>
+
+
+        <div class="w3-row-padding">
+          <div class="w3-half">
+            <label> <b>Largest number in sequence</b></label>
+            <input id="max" class="w3-input w3-border" type="text" placeholder="Max number" readonly>
+          </div>
+
+          <div class="w3-half">
+            <label> <b>Smallest number in sequence</b></label>
+            <input id="min" class="w3-input w3-border" type="text" placeholder="Min Number" readonly>
+          </div>
+
+
+
+
+        </div>
+
+        <br><br>
+
+      </div>
+    </section>
+
+
+
+  </div>
+  <!-- End page content -->
+</body>
+
+<!--Custom Scrollbar-->
+<style>
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: Dark;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7289DA;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7289DA;
+  }
+</style>
+
+<!--Script to open and close sidebar -->
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
+
+</html>

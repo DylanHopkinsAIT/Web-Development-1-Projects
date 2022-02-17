@@ -1,0 +1,18 @@
+//BasicOperations.html
+    Addition Subtraction Multiplication Absolute Difference & Division
+
+//ComplexOperaitions.html
+    
+
+    Min Max of a Sequence
+
+    Factorial (Max number 20)
+
+//Tables.html
+    Assortment of Tables
+
+//Quizzes.html
+    Randomly Generated Quiz
+
+//UnitConversions.html
+    Converions (Mass/Distance/Speed)

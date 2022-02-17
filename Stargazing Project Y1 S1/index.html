@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<title>Stargazing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/custom.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="NotBlack w3-content TextColor" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse Dark left w3-animate-left borderShadow" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-display-container">
+      <img src="images/Icon/transparency.png" style="width:25%;" class="w3-round">
+      <div class="w3-display-middle w3-large">Dark Sky</div>      
+  </div>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding Blurple"><i class="fa fa-home w3-margin-right"></i>HOMEPAGE</a> 
+    <a href="where-to-go.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plane w3-margin-right"></i>WHERE TO GO?</a> 
+    <a href="time-of-year.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-calendar w3-margin-right"></i>WHAT TIME OF YEAR?</a>
+    <a href="what-to-see.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-camera	w3-margin-right"></i>WHAT TO SEE?</a>
+    <a href="what-to-bring.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-shopping-bag w3-margin-right"></i>WHAT TO BRING?</a>
+    <a href="report.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-quote-left w3-margin-right"></i>REPORT</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="Stargazing">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1 class="w3-center w3-padding"><b>European Stargazing Destinations</b></h1>
+    
+    </div>
+  </header>
+  
+  <!-- Main Slideshow -->
+   <section>
+      <div class="w3-row w3-padding w3-animate-opacity">
+        <div class="w3-card-4 Dark">
+          <div class="w3-center ">
+            <img style="width: 100%;" class="mySlides w3-animate-opacity"  src="images/Slideshow/1.jpg">
+            <img style="width: 100%;" class="mySlides w3-animate-opacity" src="images/Slideshow/2.jpg">
+            <img style="width: 100%;" class="mySlides w3-animate-opacity" src="images/Slideshow/3.jpg">
+            <img style="width: 100%;" class="mySlides w3-animate-opacity" src="images/Slideshow/4.jpg">          
+          </div>
+          <div class="w3-center w3-padding"> 
+            <button class="w3-button w3-round w3-large w3-align-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-round w3-large w3-align-right" onclick="plusDivs(+1)">&#10095;</button>
+          </div>
+          <div class="w3-padding">
+            <div class="w3-padding">           
+              <h4 class="w3-left-align">Amateur astronomy is a hobby where participants enjoy observing or imaging celestial objects in the sky using the unaided eye, binoculars, or telescopes. Even though scientific research may not be their primary goal, some amateur astronomers make contributions in doing citizen science, such as by monitoring variable stars, double stars sunspots, or occultations of stars by the Moon or asteroids, or by discovering transient astronomical events, such as comets, galactic novae or supernovae in other galaxies.</h4>
+              <h4 class="w3-left-align">Astronomy can be daunting for beginners - after all there's a whole universe out there! But stargazing doesnt have to be hard. The Dark Sky website is here to help you on your way around the night sky. Whether your looking for destinations to gaze at the stars, or want to see some constellations to look out form you've come to the right place.</h4>
+            </div>
+          </div>
+        </div>
+    </section>  
+
+ 
+  
+ 
+</div>
+<!-- End page content -->
+
+<!--Custom Scrollbar-->
+<style>
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track { 
+    border-radius: 10px;
+    background: Dark; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7289DA; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7289DA; 
+  }
+  </style>
+
+
+<!--Script to open and close sidebar -->
+<script>
+
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+
+<!-- Slideshow Script -->
+<script> 
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>

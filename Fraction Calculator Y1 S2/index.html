@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fractions Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/CSSFile.css"/> 
+	<script type="text/javascript" src="js/JSFile.js"></script>
+</head>
+<body>
+	<h1>Fraction Calculator</h1>
+	<table>
+		<tr>
+			<td colspan="6">
+				Decimal:
+				<select id="places">
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td id="a" class="borderBottom" width="30px"> </td>
+			<td rowspan="2" style="font-size:3em;">&divide;</td>
+			<td id="c" class="borderBottom" width="30px"> </td>
+			<td rowspan="2">=</td>
+			<td class="borderBottom"><input type="text" id="num" size="3"></td>
+			<td rowspan="2" id="Feedback" width="80px">Correct</td>
+		</tr>
+		<tr>
+			<td id="b"> </td>
+			<td id="d"> </td>
+			<td><input type="text" id="denum" size="3"></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+				<input type="button" id="reset" value="Another">
+				<input type="button" id="calc" value="Check">
+			</td>
+		</tr>
+	</table>
+	<hr>
+	<p id="resultPara">When entering your answer please make sure to enter integer values.</p>
+</body>
+</html>
